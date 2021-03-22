@@ -1,0 +1,56 @@
+﻿<UserControl x:Class="BikeRental.Views.StoreWindow"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:BikeRental.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+
+    <Grid Background="#FFA0A0A0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="250"></ColumnDefinition>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Grid.Column="0" Margin="20">
+            <TextBlock FontSize="20" TextWrapping="Wrap" Margin="0,0,0,10">Selecteer een store</TextBlock>
+            <ListBox ItemsSource="{Binding Path=ListOfStores}" SelectedItem="{Binding Path=SelectedStore}">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock>
+                            <TextBlock.Text>
+                                <MultiBinding StringFormat="{}{0} ({1})">
+                                    <Binding Path="Address" />
+                                    <Binding Path="Place" />
+                                </MultiBinding>
+                            </TextBlock.Text>
+                        </TextBlock>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+        </StackPanel>
+        <Grid Grid.Column="1">
+            <StackPanel Margin="30">
+                <WrapPanel Margin="0,0,0,10">
+                    <Label Width="75">Address:</Label>
+                    <TextBox Width="200" Text="{Binding Path=SelectedStore.Address}"></TextBox>
+                </WrapPanel>
+                <WrapPanel Margin="0,0,0,10">
+                    <Label Width="75">Place:</Label>
+                    <TextBox Width="200" Text="{Binding Path=SelectedStore.Place}"></TextBox>
+                </WrapPanel>
+                <WrapPanel Margin="0,0,0,10">
+                    <Label Width="75">Capacity:</Label>
+                    <TextBox Width="200" Text="{Binding Path=SelectedStore.Capacity}"></TextBox>
+                </WrapPanel>
+                <WrapPanel Margin="0,0,0,10">
+                    <Label Width="75">Staff:</Label>
+                    <TextBox Width="200" Text="{Binding Path=SelectedStore.Staff}"></TextBox>
+                </WrapPanel>
+                <Button Margin="0,30,0,0" Padding="0,5" Command="{Binding RemoveStoreClick}">Verwijder Store</Button>
+            </StackPanel>
+        </Grid>
+    </Grid>
+
+</UserControl>

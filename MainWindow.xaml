@@ -1,0 +1,33 @@
+﻿<Window x:Class="BikeRental.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BikeRental.Views"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Title="WelcomeWindow" Height="720" Width="1280">
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30" />
+            <RowDefinition Height="1*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*" />
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Grid.Row="0" Orientation="Horizontal" Margin="10,0">
+            <Button x:Name="WelkomPageButton" Command="{Binding OpenWelcomePageClick}" Cursor="Hand" BorderThickness="0" Background="#FFA0A0A0" VerticalAlignment="Bottom" Padding="10,2" FontSize="16" Margin="10,0">Welkomscherm</Button>
+            <Button x:Name="StoresPageButton" Command="{Binding OpenStoresPageClick}" Cursor="Hand" BorderThickness="0" Background="#FFD4D4D4" VerticalAlignment="Bottom" Padding="10,2" FontSize="16" Margin="10,0">Show Stores</Button>
+            <Button x:Name="BikesPageButton" Command="{Binding OpenBikesPageClick}" Cursor="Hand" BorderThickness="0" Background="#FFD4D4D4" VerticalAlignment="Bottom" Padding="10,2" FontSize="16" Margin="10,0">Show Bikes</Button>
+            <Button x:Name="AddBikesPageButton" Command="{Binding OpenAddBikePageClick}" Cursor="Hand" BorderThickness="0" Background="#FFD4D4D4" VerticalAlignment="Bottom" Padding="10,2" FontSize="16" Margin="10,0">+ Add Bike</Button>
+            <Button x:Name="AddStoresPageButton" Command="{Binding OpenAddStorePageClick}" Cursor="Hand" BorderThickness="0" Background="#FFD4D4D4" VerticalAlignment="Bottom" Padding="10,2" FontSize="16" Margin="10,0">+ Add Store</Button>
+        </StackPanel>
+
+        <StackPanel Grid.Row="1" Background="#FFA0A0A0">
+            <ContentControl Content="{Binding SelectedViewModel}"></ContentControl>
+        </StackPanel>
+
+    </Grid>
+</Window>

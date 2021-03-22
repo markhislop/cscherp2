@@ -1,0 +1,25 @@
+﻿<Application x:Class="BikeRental.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:BikeRental"
+             xmlns:views="clr-namespace:BikeRental.Views"
+             xmlns:viewmodels="clr-namespace:BikeRental.ViewModels"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <DataTemplate DataType="{x:Type viewmodels:WelcomeWindowViewModel}">
+            <views:WelcomeWindow />
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type viewmodels:StoreWindowViewModel}">
+            <views:StoreWindow />
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type viewmodels:BikeWindowViewModel}">
+            <views:BikeWindow />
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type viewmodels:AddBikeWindowViewModel}">
+            <views:AddBikeWindow />
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type viewmodels:AddStoreWindowViewModel}">
+            <views:AddStoreWindow />
+        </DataTemplate>
+    </Application.Resources>
+</Application>
