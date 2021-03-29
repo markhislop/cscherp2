@@ -98,3 +98,9 @@ C:\Users\Mark-\OneDrive\Bureaublad\cscherp2\obj\Debug\BikeRental.csproj.Generate
 C:\Users\Mark-\OneDrive\Bureaublad\cscherp2\obj\Debug\BikeRental.csproj.CoreCompileInputs.cache
 C:\Users\Mark-\OneDrive\Bureaublad\cscherp2\obj\Debug\BikeRental.exe
 C:\Users\Mark-\OneDrive\Bureaublad\cscherp2\obj\Debug\BikeRental.pdb
+C:\Users\Mark-\OneDrive\Bureaublad\cscherp2\bin\Debug\EntityFramework.dll
+C:\Users\Mark-\OneDrive\Bureaublad\cscherp2\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Mark-\OneDrive\Bureaublad\cscherp2\bin\Debug\EntityFramework.xml
+C:\Users\Mark-\OneDrive\Bureaublad\cscherp2\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Mark-\OneDrive\Bureaublad\cscherp2\obj\Debug\BikeRental.csproj.CopyComplete
+C:\Users\Mark-\OneDrive\Bureaublad\cscherp2\obj\Debug\BikeRental.Migrations.Originalversionofmodels.resources

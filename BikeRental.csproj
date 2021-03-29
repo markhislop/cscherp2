@@ -69,6 +69,11 @@
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202103291238360_Original version of models.cs" />
+    <Compile Include="Migrations\202103291238360_Original version of models.Designer.cs">
+      <DependentUpon>202103291238360_Original version of models.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\BikeRental.cs" />
     <Compile Include="ViewModels\AddBikeWindowViewModel.cs" />
     <Compile Include="ViewModels\AddStoreWindowViewModel.cs" />
@@ -140,6 +145,9 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <EmbeddedResource Include="Migrations\202103291238360_Original version of models.resx">
+      <DependentUpon>202103291238360_Original version of models.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

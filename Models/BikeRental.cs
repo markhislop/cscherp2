@@ -11,5 +11,8 @@ namespace BikeRental.Models
         }
 
         public virtual DbSet<Bikes> Bikes { get; set; }
+        public virtual DbSet<Stores> Stores { get; set; }
+        public virtual DbSet<Customers> Customers { get; set; }
+        public virtual DbSet<Reservations> Reservations { get; set; }
     }
 }
