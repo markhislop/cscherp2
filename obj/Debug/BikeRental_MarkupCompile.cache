@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Mark-\OneDrive\Bureaublad\HBO\BikeRental\obj\Debug\
+C:\Users\Mark-\OneDrive\Bureaublad\cscherp2\obj\Debug\
 BikeRental
 none
 false
 DEBUG;TRACE
-C:\Users\Mark-\OneDrive\Bureaublad\HBO\BikeRental\App.xaml
+C:\Users\Mark-\OneDrive\Bureaublad\cscherp2\App.xaml
 6-1252249961
 
-231358762537
+24516403170
 13-1505183044
 MainWindow.xaml;Views\AddBikeWindow.xaml;Views\AddStoreWindow.xaml;Views\BikeWindow.xaml;Views\StoreWindow.xaml;Views\WelcomeWindow.xaml;
 
-False
+True
 
