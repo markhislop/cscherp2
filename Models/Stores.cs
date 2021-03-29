@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BikeRental.Models
 {
-    class Stores
+    public class Stores
     {
         public string Address { get; set; }
         public string Place { get; set; }

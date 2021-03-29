@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BikeRental.Models
 {
-    class Customers
+    public class Customers
     {
         public string Name { get; set; }
         public GenderOptions Gender { get; set; }
