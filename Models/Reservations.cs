@@ -14,6 +14,5 @@ namespace BikeRental.Models
         public DateTime StartDate { get; set; }
         public DateTime EndDate { get; set; }
         public Stores PickupStore { get; set; }
-        public Stores DropoffStore { get; set; }
     }
 }

@@ -13,6 +13,8 @@ namespace BikeRental.Models
         public string Brand { get; set; }
         public GenderOptions Gender { get; set; }
         public double Price { get; set; }
+
+        public Stores Stores { get; set; }
     }
 
     public enum GenderOptions
