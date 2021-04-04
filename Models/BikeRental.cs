@@ -4,9 +4,9 @@ using System.Linq;
 
 namespace BikeRental.Models
 {
-    public class BikeRental : DbContext
+    public class BikeRentalDb : DbContext
     {
-        public BikeRental() : base("name=BikeRental")
+        public BikeRentalDb() : base("name=BikeRental")
         {
         }
 
