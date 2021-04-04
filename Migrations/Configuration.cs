@@ -7,14 +7,14 @@ namespace BikeRental.Migrations
     using System.Data.Entity.Migrations;
     using System.Linq;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<BikeRental>
+    internal sealed class Configuration : DbMigrationsConfiguration<BikeRentalDb>
     {
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
         }
 
-        protected override void Seed(BikeRental context)
+        protected override void Seed(BikeRentalDb context)
         {
             Bikes Bike1 = new Bikes()
             {
