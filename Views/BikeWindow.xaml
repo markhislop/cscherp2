@@ -13,7 +13,7 @@
             <ColumnDefinition Width="1*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
 
-        <StackPanel Grid.Column="0" Margin="20" Background="LightBlue"> 
+        <StackPanel Grid.Column="0" Margin="20"> 
             <TextBlock FontSize="20" TextWrapping="Wrap" Margin="0,0,0,10">Selecteer een bike</TextBlock>
             <ListBox ItemsSource="{Binding Path=db.Bikes.Local}" SelectedItem="{Binding Path=SelectedBike}">
                 <ListBox.ItemTemplate>
@@ -48,7 +48,8 @@
                     <Label Width="75">Price:</Label>
                     <TextBox Width="200" Text="{Binding Path=SelectedBike.Price}"></TextBox>
                 </WrapPanel>
-                <Button Margin="0,30,0,0" Padding="0,5" Command="{Binding RemoveBikeClick}">Verwijder Bike</Button>
+                <Button Margin="0,30,0,0" Padding="0,5" Command="{Binding EditBikeClick}">Wijzig Bike</Button>
+                <Button Margin="0,10,0,0" Padding="0,5" Command="{Binding RemoveBikeClick}">Verwijder Bike</Button>
             </StackPanel>
         </Grid>
     </Grid>
