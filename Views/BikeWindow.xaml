@@ -15,7 +15,7 @@
 
         <StackPanel Grid.Column="0" Margin="20" Background="LightBlue"> 
             <TextBlock FontSize="20" TextWrapping="Wrap" Margin="0,0,0,10">Selecteer een bike</TextBlock>
-            <ListBox ItemsSource="{Binding Path=ListOfBikes}" SelectedItem="{Binding Path=SelectedBike}">
+            <ListBox ItemsSource="{Binding Path=db.Bikes.Local}" SelectedItem="{Binding Path=SelectedBike}">
                 <ListBox.ItemTemplate>
                     <DataTemplate>
                         <TextBlock>

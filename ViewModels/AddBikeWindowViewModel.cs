@@ -43,7 +43,7 @@ namespace BikeRental.ViewModels
                     Gender = Gender,
                     Price = Price
                 };
-                ListOfBikes.Add(bike);
+                // ListOfBikes.Add(bike);
                 MessageBox.Show("Bike is toegevoegd");
             };
         }

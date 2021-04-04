@@ -42,7 +42,7 @@ namespace BikeRental.ViewModels
                     Capacity = Capacity,
                     Staff = Staff
                 };
-                ListOfStores.Add(store);
+                // ListOfStores.Add(store);
                 MessageBox.Show("Store is toegevoegd");
             };
         }

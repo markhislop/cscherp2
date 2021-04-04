@@ -31,7 +31,6 @@ namespace BikeRental.ViewModels
 
         public MainWindowViewModel()
         {
-            RunStorage(); 
             OpenStoresPageClick = new RelayCommand(OpenStoresPage);
             OpenBikesPageClick = new RelayCommand(OpenBikesPage);
             OpenWelcomePageClick = new RelayCommand(OpenWelcomePage);

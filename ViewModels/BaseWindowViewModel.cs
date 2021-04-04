@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace BikeRental.ViewModels
 {
-    class BaseWindowViewModel : StorageViewModel
+    class BaseWindowViewModel
     {
        
     }

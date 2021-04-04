@@ -83,7 +83,6 @@
     <Compile Include="ViewModels\BaseWindowViewModel.cs" />
     <Compile Include="ViewModels\BikeWindowViewModel.cs" />
     <Compile Include="ViewModels\MainWindowViewModel.cs" />
-    <Compile Include="ViewModels\StorageViewModel.cs" />
     <Compile Include="ViewModels\StoreWindowViewModel.cs" />
     <Compile Include="ViewModels\WelcomeWindowViewModel.cs" />
     <Compile Include="App.xaml.cs">

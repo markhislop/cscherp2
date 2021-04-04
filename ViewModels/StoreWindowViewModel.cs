@@ -21,7 +21,7 @@ namespace BikeRental.ViewModels
 
         public void RemoveStore(object a)
         {
-            ListOfStores.Remove(SelectedStore);
+            // ListOfStores.Remove(SelectedStore);
         }
     }
 }
