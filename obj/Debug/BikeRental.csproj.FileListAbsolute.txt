@@ -104,3 +104,4 @@ C:\Users\Mark-\OneDrive\Bureaublad\cscherp2\bin\Debug\EntityFramework.xml
 C:\Users\Mark-\OneDrive\Bureaublad\cscherp2\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\Mark-\OneDrive\Bureaublad\cscherp2\obj\Debug\BikeRental.csproj.CopyComplete
 C:\Users\Mark-\OneDrive\Bureaublad\cscherp2\obj\Debug\BikeRental.Migrations.Originalversionofmodels.resources
+C:\Users\Mark-\OneDrive\Bureaublad\cscherp2\obj\Debug\BikeRental.Migrations.AddExtraCustomerFields.resources

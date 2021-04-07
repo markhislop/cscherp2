@@ -2,6 +2,7 @@
 using BikeRental.Models;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -17,9 +18,11 @@ namespace BikeRental.ViewModels
         public double Price { get; set; }
         public RelayCommand AddBikeClick { get; set; }
         public IEnumerable<GenderOptions> GenderComboBox { get; set; }
+        public BikeRentalDb db { get; set; } = new BikeRentalDb();
 
         public AddBikeWindowViewModel()
         {
+
             AddBikeClick = new RelayCommand(AddBike);
             GenderComboBox = Enum.GetValues(typeof(GenderOptions)).Cast<GenderOptions>();
             Model = "";
@@ -43,7 +46,9 @@ namespace BikeRental.ViewModels
                     Gender = Gender,
                     Price = Price
                 };
-                // ListOfBikes.Add(bike);
+
+                db.Bikes.Add(bike);
+                db.SaveChanges();
                 MessageBox.Show("Bike is toegevoegd");
             };
         }
