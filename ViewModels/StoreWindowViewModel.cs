@@ -35,7 +35,7 @@ namespace BikeRental.ViewModels
             }
             else
             {
-                MessageBox.Show("Er is geen bike gekozen!!!");
+                MessageBox.Show("Er is geen Store gekozen!!!");
             }
         }
         public void RemoveStore(object a)
