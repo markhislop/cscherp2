@@ -21,42 +21,42 @@ namespace BikeRental.Migrations
                 Brand = "Cortina",
                 Model = "U4 Transport 3v 2021",
                 Gender = GenderOptions.Male,
-                Price = 499.99
+                Price = 19.99
             };
             Bikes Bike2 = new Bikes()
             {
                 Brand = "Batavus",
                 Model = "Fonk 3v 2021",
                 Gender = GenderOptions.Female,
-                Price = 579.99
+                Price = 29.99
             };
             Bikes Bike3 = new Bikes()
             {
                 Brand = "Cortina",
                 Model = "Common Basic 3v 2021",
                 Gender = GenderOptions.Male,
-                Price = 509.09
+                Price = 14.09
             };
             Bikes Bike4 = new Bikes()
             {
                 Brand = "Batavus",
                 Model = "Mambo 7v 2021",
                 Gender = GenderOptions.Female,
-                Price = 719.09
+                Price = 15.89
             };
             Bikes Bike5 = new Bikes()
             {
                 Brand = "Gazelle",
                 Model = "Esprit C3 2021",
                 Gender = GenderOptions.Male,
-                Price = 539.99
+                Price = 17.99
             };
             Bikes Bike6 = new Bikes()
             {
                 Brand = "Stevens",
                 Model = "Boulevard Luxe 2021",
                 Gender = GenderOptions.Male,
-                Price = 1199.99
+                Price = 19.99
             };
 
             /*
