@@ -17,6 +17,7 @@ namespace BikeRental.ViewModels
         public double Price { get; set; }
         public RelayCommand AddBikeClick { get; set; }
         public IEnumerable<GenderOptions> GenderComboBox { get; set; }
+        public BikeRentalDb db { get; set; } = new BikeRentalDb();
 
         public AddBikeWindowViewModel()
         {
@@ -43,7 +44,8 @@ namespace BikeRental.ViewModels
                     Gender = Gender,
                     Price = Price
                 };
-                // ListOfBikes.Add(bike);
+                db.Bikes.Add(bike);
+                db.SaveChanges();
                 MessageBox.Show("Bike is toegevoegd");
             };
         }
