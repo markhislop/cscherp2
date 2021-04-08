@@ -137,3 +137,4 @@ C:\Users\justs\Source\Repos\cscherp2\obj\Debug\BikeRental.csproj.CoreCompileInpu
 C:\Users\justs\Source\Repos\cscherp2\obj\Debug\BikeRental.csproj.CopyComplete
 C:\Users\justs\Source\Repos\cscherp2\obj\Debug\BikeRental.exe
 C:\Users\justs\Source\Repos\cscherp2\obj\Debug\BikeRental.pdb
+C:\Users\Mark-\OneDrive\Bureaublad\cscherp2\obj\Debug\BikeRental.Migrations.AddExtraCustomerFields.resources
