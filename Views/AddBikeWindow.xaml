@@ -25,6 +25,10 @@
                 <Label FontSize="16" Width="100">Price:</Label>
                 <TextBox Background="White" FontSize="14" Width="400" Text="{Binding Path=Price}"></TextBox>
             </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0,0,0,20">
+                <Label FontSize="16" Width="100">Store:</Label>
+                <ComboBox ItemsSource="{Binding Path=db.Stores.Local}" FontSize="14" SelectedItem="{Binding Path=SelectedStore}" DisplayMemberPath="Address"></ComboBox>
+            </StackPanel>
             <Button Margin="0,20,0,0" Padding="0,10" Command="{Binding AddBikeClick}">Voeg Bike Toe</Button>
         </StackPanel>
     </Grid>
