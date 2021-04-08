@@ -16,6 +16,7 @@ namespace BikeRental.ViewModels
         public int Capacity { get; set; }
         public int Staff { get; set; }
         public RelayCommand AddStoreClick { get; set; }
+        public BikeRentalDb db { get; set; } = new BikeRentalDb();
 
         public AddStoreWindowViewModel()
         {
@@ -42,7 +43,9 @@ namespace BikeRental.ViewModels
                     Capacity = Capacity,
                     Staff = Staff
                 };
-                // ListOfStores.Add(store);
+
+                db.Stores.Add(store);
+                db.SaveChanges();
                 MessageBox.Show("Store is toegevoegd");
             };
         }
