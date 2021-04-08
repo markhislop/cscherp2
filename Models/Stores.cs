@@ -13,7 +13,7 @@ namespace BikeRental.Models
         public string Place { get; set; }
         public int Capacity { get; set; }
         public int Staff { get; set; }
-        public List<Bikes> AvailableBikes { get; set; }
+        public virtual List<Bikes> AvailableBikes { get; set; }
 
     }
 }

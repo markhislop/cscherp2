@@ -42,8 +42,15 @@ namespace BikeRental.ViewModels
         {
             if (SelectedStore != null)
             {
-                db.Stores.Local.Remove(SelectedStore);
-                db.SaveChanges();
+                if (SelectedStore.AvailableBikes.Any() == false)
+                {
+                    db.Stores.Local.Remove(SelectedStore);
+                    db.SaveChanges();
+                }
+                else
+                {
+                    MessageBox.Show("Store kan niet verwijderd worden, omdat er bikes aan de store zijn gelinkt");
+                }
             }
             else
             {
